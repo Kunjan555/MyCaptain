@@ -1,0 +1,33 @@
+/*program to print a matrix
+date:-17-05-2019*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,j,k,Sum=0;
+	int arr[3][3];
+	printf("\n enter the elements of matrix:");
+	for(i=0;i<=2;i++)
+	{
+	for(j=0;j<=2;j++)
+	{
+	printf("\n element of [%d][%d]:",i,j);
+	scanf("%d",&arr[i][j]);
+	}
+	}
+	printf("\n printing initialized array:\n");
+	for(i=0;i<=2;i++)
+	{
+	for(j=0;j<=2;j++)
+	{
+	printf(" %d",arr[i][j]);
+	}
+	printf("\n");
+	}
+	
+    Sum = Sum + arr[0][0]+ arr[1][1]+ arr[2][2];
+   		        
+ 	printf("\n The Sum of Diagonal Elements of a Matrix =  %d", Sum );
+
+	return 0;
+}
